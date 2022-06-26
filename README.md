@@ -37,11 +37,14 @@ console.log(input);
   <p>
 끌어올리기 라는 사전적 의미를 지님. 변수에 할당된 형태를 제외한 모든 변수 선언은 호이스트됨.
 <p/>
+  
+```java
 if (true) {
   console.log(input); // undefined
-  var foo = 'input1';
+  var input = 'input1';
   console.log(input);
 }
+```
 
 -> 일반적으론 input이라는 변수가 선언되지 않고 쓰였기 때문에 에러가 나야 맞음. 하지만
 함수선언이 호이스팅 되어 input변수에 할당 되었으므로 오류 X
