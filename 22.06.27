@@ -1,0 +1,15 @@
+## CSS 정리
+
+
+```
+            font-family: sans-serif, serif;
+            font-size: 10px;
+            font-weight: 200;
+```
+
+* font family 속성을 이용 하면 폰트를 바꿀 수 있음 
+            fontname,fontname1,fontname2 이런식으로 적으면 앞 폰트가 없을시 폰트를 앞에서 부터 적용 시키려고 함
+           폰트 이름에 공백이 있을때 무조건 "font name" 따옴표 안에 적어야 함
+
+* font-size : rem,em,px,% 주로 px이랑 %를 사용
+* font-weight : 폰트의 굵기 100단위로 사용 숫자가 커질수록 굵음. bolder 은 전 텍스트 보다 두껍게 라는 뜻 
