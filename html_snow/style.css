@@ -1,0 +1,98 @@
+body {
+    height: 100vh;
+    /* vh:body요소의 높이는 웹 브라우저의 높이와 동일하게 됨 */
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    /* ellipse bottom 중심에서 아랫쪽이 원형의 중심이 되어라 첫번째 색상은
+    시작 위치의 색상 두번째 색상은 종료 위치의 색상 지정 시 아래에서 부터 원형 그라데이션 배경 효과 */
+    /* 
+    radial-gradient(ellipse 지정 시 중심에서 부터 그라데이션 시작.
+    radial-gradient(ellipse 지정 후 bottom,top 등 의 위치 추가 지정 시 그 위치에서 부터 그라데이션 시작
+    */
+    overflow: hidden;
+    /* overflow: hidden 웹 브라우저의 요소를 넘어가는 것이 있으면 숨겨라 */
+}
+
+.snow {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    background-color: white;
+    border-radius: 50%;
+    animation: snow 10s linear infinite;
+    /* 스노우 라는 애니메이션을 10초 동안 균일한 속도로 적용 되도록 무한대로  */
+    /* border-radius 값을 50%로 지정하게 되면 
+    무조건 그 요소에서 최대치로 적용할수 있는 값이 적용이 됨*/
+}
+
+.snow:nth-of-type(2n) {
+    width: 12px;
+    height: 12px;
+    animation-duration: 15s;
+}
+
+.snow:nth-of-type(2n+1) {
+    animation-delay: 3s;
+    animation-duration: 8s;
+}
+
+.snow:nth-of-type(9n) {
+    animation-delay: 5s;
+    width: 5px;
+    height: 5px;
+    animation-duration: 9s;
+    /* 애니메이션 속도 */
+}
+
+.snow:nth-of-type(7n) {
+    animation-delay: 7s;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.snow:nth-of-type(11n) {
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+
+@keyframes snow {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10% {
+        opacity: 1;
+        transform: translate(7px, 10vh);
+    }
+    20% {
+        opacity: 1;
+        transform: translate(-15px, 20vh);
+        /* translate 라는 함수는 X와Y좌표 둘다 지정 */
+    }
+    30% {
+        opacity: 1;
+        transform: translate(-7px, 30vh);
+    }
+    40% {
+        opacity: 1;
+        transform: translate(15px, 40vh);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(7px, 50vh);
+    }
+    60% {
+        opacity: 1;
+        transform: translate(-15px, 60vh);
+    }
+    80% {
+        opacity: 1;
+        transform: translate(0, 80vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(100vh);
+    }
+    /* opacity(투명도) 0으로 지정시 투명 1로 지정시 불투명
+    0%
+    */
+}

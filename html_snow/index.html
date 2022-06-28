@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Falling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="snow"></div>
+    <script>
+        function createSnow() {
+            const el = document.createElement("div");
+            el.classList.add('snow');
+            el.style.marginLeft = randomPositon() + 'px';
+            document.body.appendChild(el);
+
+        }
+
+        function randomPositon() {
+            return Math.floor(Math.random() * window.innerWidth);
+        }
+        for (let i = 0; i < 300; i++) {
+            createSnow();
+        }
+    </script>
+</body>
+
+</html>
