@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.ghost {
+    animation: moveUpDown 3s infinite;
+    position: absolute;
+    flex-wrap: wrap;
+}
+
+@keyframes moveUpDown {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: -50px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+.ghost .body {
+    width: 120px;
+    height: 160px;
+    background-color: white;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    position: relative;
+}
+
+.ghost .body .face {
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+}
+
+.ghost .body .face .eye {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #333;
+}
+
+.ghost .body .face .mouse {
+    width: 33px;
+    height: 15px;
+    background-color: #333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 18px;
+    margin-top: 13px;
+}
+
+.ghost .bottom {
+    display: flex;
+}
+
+.ghost .bottom .leg {
+    background-color: #fff;
+    width: 24px;
+    height: 15px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.ghost .bottom .leg:nth-child(2n) {
+    position: relative;
+    top: -6px;
+    background-color: #000;
+    border-radius: 50%;
+}
