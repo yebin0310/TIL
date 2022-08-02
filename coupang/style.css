@@ -1,0 +1,31 @@
+h1{}
+h1 a{}
+h1 a img{}
+main{}
+main #loginFrm{}
+main #loginFrm fieldset {}
+main #loginFrm fieldset ul {}
+main #loginFrm fieldset ul li{}
+main #loginFrm fieldset ul .error{}
+main #loginFrm fieldset ul .id_error{}
+main #loginFrm fieldset ul .pw_error{}
+main #loginFrm fieldset ul li span{}
+main #loginFrm fieldset ul li #id_bg{}
+main #loginFrm fieldset ul li #pw_bg{}
+main #loginFrm fieldset ul li span input{}
+main #loginFrm fieldset ul li span input[type=text]{}
+main #loginFrm fieldset ul li span input[type=password]{}
+main #loginFrm fieldset ul li .pw_show_hide {}
+main #loginFrm fieldset .btm{}
+main #loginFrm fieldset .btm p{}
+main #loginFrm fieldset .btm p label{}
+main #loginFrm fieldset .btm p label input[name=login_y]{}
+main #loginFrm fieldset .btm p label span{}
+main #loginFrm fieldset .btm .idpw_searchl{}
+main #loginFrm fieldset #login_btn {}
+main.join_link{}
+footer{
+    text-align: center;
+    font-size: 0.085rem;
+    margin-top: 20px;
+}
