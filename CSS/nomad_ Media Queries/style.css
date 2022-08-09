@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+div{
+    background-color: teal;
+    width: 200px;
+    height: 200px;
+}
+
+span{
+    font-size: 36px;
+}
+
+@media screen and (orientation:lanscape) {
+    span{
+        display: none;
+    }
+}
+
+@media screen and (min-width:601px) and  (max-width:1200px){
+    /* 이 스크린이 400픽셀보다 작으면 */
+        div{
+            background-color: wheat;
+        }
+    }
+
+    @media print {
+        body{
+            background-color: tomato;
+        }
+    }
+
